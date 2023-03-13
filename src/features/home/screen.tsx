@@ -1,25 +1,16 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { Github, Twitter } from "@tamagui/lucide-icons";
 import { FC } from "react";
-import {
-	Anchor,
-	H1,
-	ListItem,
-	Paragraph,
-	Separator,
-	YGroup,
-	YStack
-} from "tamagui";
 
+import StorybookUIRoot from "../../../storybook";
 import { MyStack } from "../../components/MyStack";
-import { LinkToUser } from "./link-to-user";
 
 export const HomeScreen: FC<
 	NativeStackScreenProps<StackNavigatorParams, "home">
 > = ({ navigation }) => {
 	return (
 		<MyStack>
-			<YStack
+			<StorybookUIRoot />
+			{/* <YStack
 				space="$4"
 				maxWidth={600}
 			>
@@ -62,7 +53,7 @@ export const HomeScreen: FC<
 						</Anchor>
 					</ListItem>
 				</YGroup>
-			</YStack>
+			</YStack> */}
 		</MyStack>
 	);
 };
